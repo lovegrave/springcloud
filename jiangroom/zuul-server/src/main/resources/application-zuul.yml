@@ -1,0 +1,19 @@
+---
+spring:
+  profiles: dev
+zuul:
+  routes:
+#    用户系统
+    user:
+      serviceId: user-service
+      path: /user/**
+#      财务系统
+    finance:
+      serviceId: finance-service
+      path: /finance/**
+    crm:
+      serviceId: crm-service
+      path: /path/**
+    cms:
+      serviceId: cms-service
+      path: /cms/**
