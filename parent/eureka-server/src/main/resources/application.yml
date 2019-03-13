@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    include: eureka
+    active: dev1
