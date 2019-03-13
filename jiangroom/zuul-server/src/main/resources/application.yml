@@ -14,3 +14,16 @@ eureka:
 
 zuul:
   retryable: true
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      access-token-uri: http://localhost:7777/uaa/oauth/token
+      user-authorization-uri: http://localhost:7777/uaa/oauth/authorize
+      client-id: zuul_server
+      client-secret: secret
+    resource:
+      jwt:
+        key-value: springcloud123
